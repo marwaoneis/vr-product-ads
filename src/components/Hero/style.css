@@ -1,0 +1,85 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  padding: 0 50px;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/triangle.png") no-repeat center bottom;
+  background-size: 110% 62%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  text-align: left;
+  left: 100px;
+  z-index: 2;
+}
+
+.hero-main-text {
+  font-size: 55px;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  font-weight: 600;
+  line-height: 91px;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+  position: relative;
+}
+
+.hero-main-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #000;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 91px;
+  visibility: hidden;
+}
+
+.hero-sub-text {
+  font-size: 55px;
+  margin-left: 60px;
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 1.1;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 2;
+}
