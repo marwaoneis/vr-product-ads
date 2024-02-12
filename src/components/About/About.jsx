@@ -18,7 +18,7 @@ const AboutSection = () => {
           driving meaningful connections.
         </p>
         <div className="container">
-          <button className="btn" data="I want to try!"></button>
+          <button className="button" data="I want to try!"></button>
         </div>
         <div className="ball-right"></div>
         <div className="ball-left"></div>

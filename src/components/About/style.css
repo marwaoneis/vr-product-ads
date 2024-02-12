@@ -36,7 +36,7 @@
   line-height: 1.5;
 }
 
-.btn {
+.button {
   padding: 18px 75px;
   border: none;
   outline: none;
@@ -47,7 +47,8 @@
   cursor: pointer;
   overflow: hidden;
 }
-.btn::before {
+
+.button::before {
   content: "";
   position: absolute;
   left: 2px;
@@ -59,7 +60,8 @@
   z-index: -1;
   transition: 200ms;
 }
-.btn::after {
+
+.button::after {
   content: attr(data);
   font-size: 18px;
   background: white;
@@ -69,7 +71,8 @@
   position: relative; /* Ensure that it's on top of the ::before pseudo-element */
   z-index: 1;
 }
-.btn:hover::before {
+
+.button:hover::before {
   opacity: 0.5;
   top: 0px;
   right: 0px;
@@ -78,7 +81,7 @@
   border-radius: 50px;
 }
 
-.btn:hover::after {
+.button:hover::after {
   color: white;
 }
 
