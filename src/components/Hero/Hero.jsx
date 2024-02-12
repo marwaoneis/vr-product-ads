@@ -18,9 +18,9 @@ const Hero = () => {
       <img src={heroImage} alt="VR Headset" className="hero-image" />
       <img src={diagonalSlash2} alt="" class="diagonal-slash-2" />
       <img src={diagonalSlash3} alt="" class="diagonal-slash-3" />
-      <div className="circle circle-right"></div>
-      <div className="circle circle-center"></div>
-      <div className="circle circle-left"></div>
+      <div className="circle-right"></div>
+      <div className="circle-center"></div>
+      <div className="circle-left"></div>
     </div>
   );
 };
