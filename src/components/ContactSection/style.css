@@ -1,0 +1,98 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-90deg, #ad00ff, #23a6d5);
+  color: white;
+  position: relative;
+  padding: 50px;
+  gap: 50px;
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/triangle-2.png") no-repeat center center; /* Center the image */
+  z-index: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  padding-left: 85px;
+}
+
+.contact-container .logo-container {
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+}
+
+.contact-container .logo-image {
+  height: 30px;
+}
+
+.contact-container .logo-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.contact-container .logo-vr {
+  font-weight: bold;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.social-media img {
+  margin-right: 10px;
+}
+
+.contact-container h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-content p {
+  margin-bottom: 10px;
+}
+
+.footer {
+  grid-gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 237px;
+  z-index: 1;
+}
+
+.footer-ball {
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(
+    circle at 35% 25%,
+    #1ecdf5,
+    #7446ff,
+    #ad00ff
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -8%;
+  right: 3%;
+  z-index: 2;
+  filter: blur(0.5px);
+}
