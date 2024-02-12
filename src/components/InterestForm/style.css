@@ -1,0 +1,61 @@
+.interest-form-container {
+  background-color: #141416;
+  color: white;
+  padding: 50px; /* Adjust as needed */
+  text-align: center;
+}
+
+.interest-form-container h2 {
+  font-size: 2rem; /* Adjust as needed */
+  margin-bottom: 1rem;
+}
+
+.interest-form-container p {
+  margin-bottom: 2rem;
+}
+
+.interest-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#141416, #141416),
+    linear-gradient(to right, #ad00ff, #23a6d5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  padding: 10px 30px;
+  border: none;
+  background-image: linear-gradient(to right, #ad00ff, #23a6d5);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-image: linear-gradient(to right, #23a6d5, #ad00ff);
+}
+
+.privacy-policy {
+  color: white;
+  font-size: 0.9rem; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.privacy-policy input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
