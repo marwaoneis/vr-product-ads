@@ -2,45 +2,73 @@
   background-color: #141416;
   color: white;
   padding: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .interest-form-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  padding-left: 100px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 38px;
 }
 
 .interest-form-container p {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding-left: 100px;
 }
 
-.interest-form {
+.left-ball {
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(
+    circle at 75% 20%,
+    #1ecdf5,
+    #7446ff,
+    #ad00ff
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 200%;
+  left: 4%;
+  z-index: 2;
+  filter: blur(2px);
+}
+
+.form-row {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  align-items: center;
+  gap: 15px;
+}
+
+.input-container {
+  background: linear-gradient(to right, #ad00ff, #23a6d5);
+  border-radius: 20px;
+  padding: 2px;
 }
 
 .input-field {
-  border: 1px solid transparent;
-  background-image: linear-gradient(#141416, #141416),
-    linear-gradient(to right, #ad00ff, #23a6d5);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  border-radius: 20px;
+  width: 100%;
+  padding: 10px 26px;
+  background-color: #141416; /* The inner background color */
+  border: none; /* Remove default border */
+  border-radius: 18px; /* Slightly less than .input-container to maintain the rounded corners */
   color: white;
-  margin-bottom: 1rem;
+  outline: none; /* Remove the default focus outline */
 }
 
 .submit-button {
-  padding: 10px 30px;
+  padding: 10px 70px;
   border: none;
   background-image: linear-gradient(to right, #ad00ff, #23a6d5);
   color: white;
   border-radius: 20px;
   cursor: pointer;
+  letter-spacing: 1px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .submit-button:hover {
@@ -48,14 +76,29 @@
 }
 
 .privacy-policy {
-  color: white;
-  font-size: 0.9rem;
+  color: gray;
+  font-size: 14px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
+  align-items: right;
+  justify-content: right;
+  margin-top: 16px;
+  padding-right: 150px;
 }
 
 .privacy-policy input[type="checkbox"] {
   margin-right: 0.5rem;
+}
+
+.try {
+  position: relative;
+  font-size: 35px;
+  text-align: right;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  line-height: 1.5;
+  background-clip: text;
+  color: transparent;
 }
