@@ -1,3 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/trueno");
+@import url("https://fonts.cdnfonts.com/css/tt-fors-trial");
+
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,13 +32,13 @@
   font-size: 55px;
   margin: 0 0 10px 0;
   line-height: 1.1;
-  font-weight: 600;
-  line-height: 91px;
-  -webkit-text-stroke: 1px #ffffff;
-  color: transparent;
+  color: white;
   position: relative;
+  /* font-family: "Avita Outline", sans-serif; */
+  font-family: "TT Fors", sans-serif;
+  font-weight: 900;
 }
-
+/* 
 .hero-main-text::after {
   content: attr(data-text);
   position: absolute;
@@ -47,15 +50,15 @@
   color: #000;
   font-size: 55px;
   font-weight: 600;
+  font-family: "Trueno", sans-serif;
   line-height: 91px;
   visibility: hidden;
-}
+} */
 
 .hero-sub-text {
   font-size: 55px;
   margin-left: 60px;
   white-space: nowrap;
-  font-weight: 500;
   line-height: 1.1;
   background: linear-gradient(
     to right,

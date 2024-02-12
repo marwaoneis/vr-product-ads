@@ -1,3 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/trueno");
+@import url("https://fonts.cdnfonts.com/css/tt-fors-trial");
+
 .interest-form-container {
   background-color: #141416;
   color: white;
@@ -8,6 +11,8 @@
 .interest-form-container h2 {
   padding-left: 100px;
   margin-bottom: 5px;
+  /* font-family: "Trueno", sans-serif; */
+  font-family: "TT Fors", sans-serif;
 }
 
 .title {
@@ -30,7 +35,7 @@
   );
   border-radius: 50%;
   position: absolute;
-  top: 200%;
+  top: 217%;
   left: 4%;
   z-index: 2;
   filter: blur(2px);

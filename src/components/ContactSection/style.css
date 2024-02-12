@@ -1,3 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/trueno");
+@import url("https://fonts.cdnfonts.com/css/tt-fors-trial");
+
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -12,11 +15,11 @@
 .contact-container::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -14px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../../assets/triangle-2.png") no-repeat center center; /* Center the image */
+  background: url("../../assets/triangle-2.png") no-repeat center center;
   z-index: 0;
 }
 
@@ -59,6 +62,8 @@
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
+  /* font-family: "Trueno", sans-serif; */
+  font-family: "TT Fors", sans-serif;
 }
 
 .contact-content p {
