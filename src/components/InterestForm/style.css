@@ -1,12 +1,12 @@
 .interest-form-container {
   background-color: #141416;
   color: white;
-  padding: 50px; /* Adjust as needed */
+  padding: 50px;
   text-align: center;
 }
 
 .interest-form-container h2 {
-  font-size: 2rem; /* Adjust as needed */
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -49,7 +49,7 @@
 
 .privacy-policy {
   color: white;
-  font-size: 0.9rem; /* Adjust as needed */
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
