@@ -14,7 +14,7 @@ const ContactComponent = () => {
             Ad<span className="logo-vr">VR</span>ise
           </div>
         </div>
-        <h2>CONTACTS</h2>
+        <h2>Contacts</h2>
       </div>
       <div className="footer">
         <div className="contact-info">

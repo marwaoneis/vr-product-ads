@@ -4,7 +4,7 @@ import "./style.css";
 const InterestForm = () => {
   return (
     <div className="interest-form-container">
-      <h2 className="title">INTERESTED IN VR ADS?</h2>
+      <h2 className="title">Interested in VR Ads?</h2>
       <p>Fill out a short form and we will call you back</p>
       <div className="left-ball"></div>
       <div className="form-row">

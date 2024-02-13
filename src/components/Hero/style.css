@@ -9,8 +9,7 @@
   padding: 0 50px;
 }
 
-.hero-container::before {
-  content: "";
+.triangle {
   position: absolute;
   bottom: -18px;
   left: 0;

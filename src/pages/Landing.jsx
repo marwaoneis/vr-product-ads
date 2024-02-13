@@ -3,6 +3,7 @@ import ContactComponent from "../components/ContactSection/ContactSection";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import InterestForm from "../components/InterestForm/InterestForm";
+import TeamSection from "../components/TeamSection/TeamSection";
 
 const Landing = () => {
   return (
@@ -11,6 +12,7 @@ const Landing = () => {
       <Hero />
       <AboutSection />
       <InterestForm />
+      <TeamSection />
       <ContactComponent />
     </div>
   );

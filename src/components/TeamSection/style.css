@@ -1,0 +1,84 @@
+.team-section {
+  background-color: #141416;
+  text-align: center;
+  padding: 0 50px 50px;
+}
+
+.team-section h2 {
+  padding-left: 100px;
+  text-align: left;
+  color: white;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  font-family: "TT Fors", sans-serif;
+}
+
+.team-ball {
+  width: 30px;
+  height: 30px;
+  background-image: radial-gradient(
+    circle at 75% 20%,
+    #1ecdf5,
+    #7446ff,
+    #ad00ff
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 342%;
+  left: 46%;
+  z-index: 2;
+  filter: blur(1px);
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-image-box {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, #23a6d5, #ad00ff);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative; /* This ensures z-index is applied correctly */
+  overflow: visible; /* Allows the image to overflow the div */
+}
+
+.member-image-box .oliviaImage {
+  width: 85%;
+  left: 11%;
+  top: -67px;
+  border-radius: 0 36% 47%;
+  z-index: 2;
+}
+
+.member-image-box img {
+  border-radius: 50%;
+  width: 167px;
+  height: 216px;
+  object-fit: cover;
+  position: absolute;
+  top: -65px;
+  left: -8px;
+  z-index: 2;
+}
+
+.team-member h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  color: gray;
+  font-size: 13px;
+}
