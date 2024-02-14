@@ -62,7 +62,6 @@
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
-  /* font-family: "Trueno", sans-serif; */
   font-family: "TT Fors", sans-serif;
 }
 
@@ -100,4 +99,26 @@
   right: 3%;
   z-index: 2;
   filter: blur(0.5px);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: auto;
+    gap: 40px;
+  }
+
+  .contact-container::before {
+    bottom: 210px;
+    top: -108px;
+  }
+
+  .contact-info {
+    padding-left: 0;
+  }
+
+  .footer {
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1;
+  }
 }

@@ -37,3 +37,13 @@
 .nav-link:hover {
   color: #181718;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 28px 0;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+}

@@ -79,7 +79,6 @@
   line-height: 64px;
   margin-bottom: 20px;
   margin-left: 30px;
-  /* font-family: "Trueno", sans-serif; */
   font-family: "TT Fors", sans-serif;
 }
 
@@ -175,4 +174,26 @@
   right: -12%;
   z-index: 2;
   filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: auto;
+  }
+
+  .about-image-box {
+    height: 120%;
+    width: 88%;
+  }
+
+  .about-content {
+    right: 10%;
+  }
+
+  .about-content h2 {
+    margin-left: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 20px;
+  }
 }

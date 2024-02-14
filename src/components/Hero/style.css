@@ -150,3 +150,54 @@ html {
   z-index: 2;
   filter: blur(2px);
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .triangle {
+    background-size: auto;
+  }
+
+  .hero-content {
+    left: 0;
+    text-align: center;
+    top: 6%;
+  }
+
+  .hero-main-text {
+    font-size: 47px;
+    white-space: nowrap;
+  }
+
+  .hero-sub-text {
+    font-size: 37px;
+    margin-left: 0;
+  }
+
+  .hero-image {
+    height: 63%;
+    right: 5%;
+    top: 7%;
+  }
+
+  .new-image {
+    top: 0;
+  }
+
+  .circle-right {
+    top: 0;
+    right: 8%;
+  }
+
+  .circle-center {
+    left: 75%;
+    bottom: 20%;
+    z-index: -1;
+  }
+
+  .circle-left {
+    bottom: 15%;
+  }
+}

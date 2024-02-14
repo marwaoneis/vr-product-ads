@@ -15,7 +15,7 @@ const Hero = () => {
   const heroImageRef = useRef();
   const heroContentRef = useRef();
   const newImageRef = useRef();
-  const [overflowHidden, setOverflowHidden] = useState(false); // State to control overflow
+  const [overflowHidden, setOverflowHidden] = useState(false);
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -25,8 +25,9 @@ const Hero = () => {
         end: "200% top",
         scrub: 1,
         pin: true,
-        onEnter: () => setOverflowHidden(true), // Hide overflow when entering
-        onLeaveBack: () => setOverflowHidden(false), // Show overflow when leaving back
+        onEnter: () => setOverflowHidden(true),
+        onLeaveBack: () => setOverflowHidden(false),
+        onLeave: () => resetContainerHeight(),
       },
     });
 
@@ -50,13 +51,13 @@ const Hero = () => {
       .to(
         heroImageRef.current,
         {
-          xPercent: -50, // Moves the image to the center
-          scale: 7, // Zooms in on the VR glasses
+          xPercent: -50,
+          scale: 7,
           ease: "none",
           transformOrigin: "50% 25%",
         },
         0
-      ) // Start at the same time as the text moves out
+      )
       .to(
         newImageRef.current,
         {
@@ -67,98 +68,32 @@ const Hero = () => {
         "<"
       )
       .to(
+        heroImageRef.current,
+        {
+          autoAlpha: 0,
+          duration: 0.01,
+        },
+        ">"
+      )
+      .to(
         ".triangle, .circle-right, .circle-center, .circle-left",
         {
           autoAlpha: 0,
           ease: "none",
-          immediateRender: false, // Prevents immediate rendering when the component mounts
+          immediateRender: false,
         },
         ">"
       );
+
+    const resetContainerHeight = () => {
+      gsap.set(heroContainerRef.current, { clearProps: "height" });
+    };
+
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
-      setOverflowHidden(false); // Reset overflow when component is unmounted
+      setOverflowHidden(false);
     };
   }, []);
-
-  // useEffect(() => {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".hero-container",
-  //       start: "top top",
-  //       end: "bottom top",
-  //       scrub: true,
-  //       pin: true,
-  //       anticipatePin: 1,
-  //       onUpdate: (self) => {
-  //         if (self.direction === -1) {
-  //           reverseAnimation();
-  //         }
-  //       },
-  //     },
-  //   });
-
-  //   // Forward animation
-  //   tl.to(".hero-image", {
-  //     x: "-50%",
-  //     // scale: 3,
-  //     duration: 0.5,
-  //     ease: "power1.inOut",
-  //   }).to(
-  //     ".hero-content",
-  //     {
-  //       xPercent: -100,
-  //       autoAlpha: 0,
-  //       duration: 0.5,
-  //       ease: "power1.inOut",
-  //     },
-  //     "<"
-  //   );
-  //   // .to(
-  //   //   ".circle-left, .triangle",
-  //   //   {
-  //   //     y: 100,
-  //   //     duration: 0.5,
-  //   //     ease: "power1.inOut",
-  //   //   },
-  //   //   "<"
-  //   // );
-
-  //   // Reverse animation
-  //   const reverseAnimation = () => {
-  //     const reverseTl = gsap.timeline();
-  //     reverseTl
-  //       .to(".hero-image", {
-  //         x: "0%",
-  //         scale: 1,
-  //         duration: 0.5,
-  //         ease: "power1.inOut",
-  //       })
-  //       .to(
-  //         ".hero-content",
-  //         {
-  //           xPercent: 0,
-  //           autoAlpha: 1,
-  //           duration: 0.5,
-  //           ease: "power1.inOut",
-  //         },
-  //         "<"
-  //       );
-  //     // .to(
-  //     //   ".circle-left, .triangle",
-  //     //   {
-  //     //     y: 0,
-  //     //     duration: 0.5,
-  //     //     ease: "power1.inOut",
-  //     //   },
-  //     //   "<"
-  //     // );
-  //   };
-
-  //   return () => {
-  //     ScrollTrigger.getAll().forEach((t) => t.kill());
-  //   };
-  // }, []);
 
   return (
     <div

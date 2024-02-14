@@ -50,8 +50,8 @@
   background: linear-gradient(to right, #23a6d5, #ad00ff);
   border-radius: 50%;
   margin-bottom: 20px;
-  position: relative; /* This ensures z-index is applied correctly */
-  overflow: visible; /* Allows the image to overflow the div */
+  position: relative;
+  overflow: visible;
 }
 
 .member-image-box .oliviaImage {
@@ -82,4 +82,16 @@
 .team-member p {
   color: gray;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    gap: 85px;
+    flex-direction: column;
+  }
+
+  .team-section h2 {
+    padding-left: 0;
+    text-align: center;
+  }
 }

@@ -12,7 +12,6 @@
 .interest-form-container h2 {
   padding-left: 100px;
   margin-bottom: 5px;
-  /* font-family: "Trueno", sans-serif; */
   font-family: "TT Fors", sans-serif;
 }
 
@@ -57,11 +56,11 @@
 .input-field {
   width: 100%;
   padding: 10px 26px;
-  background-color: #141416; /* The inner background color */
-  border: none; /* Remove default border */
-  border-radius: 18px; /* Slightly less than .input-container to maintain the rounded corners */
+  background-color: #141416;
+  border: none;
+  border-radius: 18px;
   color: white;
-  outline: none; /* Remove the default focus outline */
+  outline: none;
 }
 
 .submit-button {
@@ -107,4 +106,16 @@
   line-height: 1.5;
   background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 768px) {
+  .interest-form-container h2,
+  .interest-form-container p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
 }
