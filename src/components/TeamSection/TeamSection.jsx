@@ -15,25 +15,29 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <div className="team-section">
-      <h2>OUR TEAM</h2>
-      <div className="team-ball"></div>
-      <div className="team-members">
-        {teamMembers.map((member) => (
-          <div className="team-member" key={member.name}>
-            <div className="member-image-box">
-              <img
-                src={member.img}
-                alt={member.name}
-                className={member.name === "Olivia Butler" ? "oliviaImage" : ""}
-              />
+    <section id="team">
+      <div className="team-section">
+        <h2>OUR TEAM</h2>
+        <div className="team-ball"></div>
+        <div className="team-members">
+          {teamMembers.map((member) => (
+            <div className="team-member" key={member.name}>
+              <div className="member-image-box">
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className={
+                    member.name === "Olivia Butler" ? "oliviaImage" : ""
+                  }
+                />
+              </div>
+              <h3>{member.name}</h3>
+              <p>{member.role}</p>
             </div>
-            <h3>{member.name}</h3>
-            <p>{member.role}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

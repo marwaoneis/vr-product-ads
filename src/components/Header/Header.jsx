@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./style.css";
 import logoImage from "../../assets/logo.svg";
 
@@ -12,18 +13,15 @@ const Header = () => {
         </div>
       </div>
       <nav className="navigation flex">
-        <a href="#about" className="nav-link white-text bold">
+        <Link to="#about" className="nav-link white-text bold">
           About
-        </a>
-        <a href="#tryvr" className="nav-link white-text bold">
-          Try VR
-        </a>
-        <a href="#team" className="nav-link white-text bold">
+        </Link>
+        <Link to="#team" className="nav-link white-text bold">
           Team
-        </a>
-        <a href="#contacts" className="nav-link white-text bold">
+        </Link>
+        <Link to="#contacts" className="nav-link white-text bold">
           Contacts
-        </a>
+        </Link>
       </nav>
     </header>
   );

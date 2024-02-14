@@ -22,20 +22,19 @@
 
 .new-image {
   position: absolute;
-  top: 0;
+  top: -90px;
   left: 0;
   width: 100%;
-  display: block; /* ensure it's visible */
-  opacity: 0; /* start with an invisible state */
-  z-index: 1; /* adjust based on your layering needs */
+  display: block;
+  opacity: 0;
+  z-index: 1;
 }
 
-/* Fix any margins or paddings that might cause unwanted space */
 body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 .hero-content {
@@ -51,26 +50,9 @@ html {
   line-height: 1.1;
   color: white;
   position: relative;
-  /* font-family: "Avita Outline", sans-serif; */
   font-family: "TT Fors", sans-serif;
   font-weight: 900;
 }
-/* 
-.hero-main-text::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #000;
-  font-size: 55px;
-  font-weight: 600;
-  font-family: "Trueno", sans-serif;
-  line-height: 91px;
-  visibility: hidden;
-} */
 
 .hero-sub-text {
   font-size: 55px;
@@ -80,7 +62,7 @@ html {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.6)
   );
   background-clip: text;
   color: transparent;
