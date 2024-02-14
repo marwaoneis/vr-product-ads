@@ -128,7 +128,7 @@ html {
   );
   border-radius: 50%;
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 10%;
   z-index: 2;
   filter: blur(0.5px);
