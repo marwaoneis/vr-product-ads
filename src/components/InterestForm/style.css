@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/tt-fors-trial");
 
 .interest-form-container {
+  position: relative;
   background-color: #141416;
   color: white;
   padding: 50px;
@@ -35,7 +36,7 @@
   );
   border-radius: 50%;
   position: absolute;
-  top: 217%;
+  top: 55%;
   left: 4%;
   z-index: 2;
   filter: blur(2px);
