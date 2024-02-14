@@ -1,4 +1,5 @@
 .team-section {
+  position: relative;
   background-color: #141416;
   text-align: center;
   padding: 0 50px 50px;
@@ -24,7 +25,7 @@
   );
   border-radius: 50%;
   position: absolute;
-  top: 342%;
+  top: 12%;
   left: 46%;
   z-index: 2;
   filter: blur(1px);
