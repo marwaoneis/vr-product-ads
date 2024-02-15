@@ -22,7 +22,7 @@ const Hero = () => {
       scrollTrigger: {
         trigger: heroContainerRef.current,
         start: "top top",
-        end: "200% top",
+        end: () => `+=${window.innerHeight}px`,
         scrub: 1,
         pin: true,
         onEnter: () => setOverflowHidden(true),
@@ -85,13 +85,25 @@ const Hero = () => {
         ">"
       );
 
-    const resetContainerHeight = () => {
+    function resetContainerHeight() {
+      ScrollTrigger.matchMedia({
+        // On mobile devices
+        "(max-width: 768px)": function () {
+          const pinSpacer = document.querySelector(".pin-spacer");
+          // Reset pin-spacer height
+          if (pinSpacer) {
+            gsap.set(pinSpacer, { height: 0 });
+          }
+        },
+      });
+      // Reset the hero container height
       gsap.set(heroContainerRef.current, { clearProps: "height" });
-    };
+    }
 
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
       setOverflowHidden(false);
+      resetContainerHeight();
     };
   }, []);
 
