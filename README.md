@@ -33,6 +33,6 @@ To run this project locally, follow these steps:
 
 Enjoy exploring the immersive world of VR advertising!
 
-# Figma Design
+### Figma Design
 
 Check website design on [figma](https://www.figma.com/file/LSrdSzedQbRTYOmQOYKGsU/VR-ADS?type=design&node-id=0-1&mode=design&t=S5A51pkYMiCa9FgA-0)
