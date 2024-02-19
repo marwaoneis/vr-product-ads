@@ -1,3 +1,5 @@
+[vr-ads-demo.webm](https://github.com/marwaoneis/vr-product-ads/assets/110203332/d0823034-c61a-446b-9c6b-936a162177e9)
+
 ### Project Description
 
 Ad**VR**ise is an innovative platform that leverages the power of React.js to showcase advertisements for products in a Virtual Reality (VR) environment. The application is designed to immerse users fully in a 3D advertising space, where they can interact with and explore products in a way that traditional advertising cannot match. Using GSAP (GreenSock Animation Platform), the project delivers smooth, engaging transitions and parallax effects that enhance the user experience and make navigating through ads a visually stunning journey. This approach to advertising has the potential to revolutionize how products are marketed, offering a more interactive and memorable engagement with audiences.
